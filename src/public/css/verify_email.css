@@ -1,0 +1,64 @@
+.verify {
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+/* 中央の塊 */
+.verify__container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* 文言 */
+.verify__text {
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 700;
+    margin: 0 0 22px;
+}
+
+/* ボタン */
+.verify__actions {
+    margin: 0 0 16px;
+}
+
+.verify__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin:40px 0;
+    width: 180px;
+    height: 44px;
+    border: 1px solid #999;
+    background: #e6e6e6;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+/* 「再送する」リンク */
+.verify__resend {
+    margin: 0;
+}
+
+.verify__link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    color: #1e6bd6;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 再送しました の表示 */
+.verify__status {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #000;
+}

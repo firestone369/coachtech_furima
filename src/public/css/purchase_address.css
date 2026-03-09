@@ -1,0 +1,68 @@
+.address-page {
+    width: 100%;
+}
+
+.address-page__inner {
+    width: min(720px, 92vw);
+    margin: 0 auto;
+    padding: 40px 0 70px;
+    text-align: center;
+}
+
+.address-title {
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-weight: 780;
+    color: #111;
+}
+
+.address-form {
+    width: 520px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.address-field {
+    margin-bottom: 22px;
+}
+
+.address-label {
+    display: block;
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+}
+
+.address-input {
+    width: 100%;
+    height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+}
+
+.address-input:focus {
+    border-color: #999;
+}
+
+.address-submit {
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.address-submit:hover {
+    filter: brightness(0.97);
+}

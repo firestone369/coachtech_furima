@@ -1,0 +1,185 @@
+/* フォームの外枠 */
+.create-form {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ページ全体のコンテナ */
+.create-page {
+    width: 100%;
+}
+
+.create-page__inner {
+    width: 100%;
+    padding: 20px 0 60px;
+}
+
+.create-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* セクション（必要な箇所のみ下線） */
+.create-section--border-bottom {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    margin: 16px 0 10px;
+}
+
+.create-section-condition__title {
+    padding-top: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.create-section__title {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+}
+
+/* 各入力ブロック */
+.create-block {
+    width: 500px;
+    margin-bottom: 12px;
+}
+
+.create-label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 入力要素（親500pxに合わせる） */
+.create-select,
+.create-textarea {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.create-textarea {
+    resize: vertical;
+}
+
+/* 画像アップロード */
+.create-image-box {
+    width: 100%;
+    height: 90px;
+    border: 1px dashed #cfcfcf;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-image-button {
+    padding: 6px 12px;
+    border: 1px solid #ff4a4a;
+    color: #ff4a4a;
+    font-size: 12px;
+    font-weight: 700;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-image-input {
+    display: none;
+}
+
+/* カテゴリタグ: 500pxで折り返し */
+.create-tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+.create-tag-cell {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.create-tag-check {
+    position: absolute;
+    opacity: 0;
+}
+
+.create-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #ff4a4a;
+    border-radius: 14px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff4a4a;
+    cursor: pointer;
+}
+
+.create-tag-check:checked+.create-tag {
+    background: #ff4a4a;
+    color: #fff;
+}
+
+/* 商品価格入力 */
+.create-price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ラッパー */
+.price-input-wrap {
+    position: relative;
+    width: 100%;
+}
+
+/* ¥マーク（ボックスの中） */
+.price-input-yen {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    pointer-events: none;
+}
+
+/* input本体 */
+.price-input {
+    width: 100%;
+    padding: 8px 10px 8px 28px;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* 「出品する」ボタン */
+.create-actions {
+    width: 500px;
+    margin-top: 30px;
+}
+
+.create-submit {
+    width: 100%;
+    height: 40px;
+    background: #ff4a4a;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #ff4a4a;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.create-submit:hover {
+    filter: brightness(0.95);
+}

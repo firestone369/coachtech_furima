@@ -1,0 +1,453 @@
+/* テーブル共通：属性代替 */
+.item-show,
+.item-show__right-table,
+.item-info-table,
+.comment-form-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+}
+
+.item-show td,
+.item-show th,
+.item-show__right-table td,
+.item-show__right-table th,
+.item-info-table td,
+.item-info-table th,
+.comment-form-table td,
+.comment-form-table th {
+    padding: 0px;
+    border: none;
+    vertical-align: top;
+}
+
+.item-info-table th,
+.item-info-table td {
+    padding: 6px 0;
+}
+
+.item-show__right-table>tbody>tr>td {
+    padding: 6px;
+}
+
+.item-show {
+    width: min(1100px, 92vw);
+    margin: 35px auto 80px;
+}
+
+/* 左右カラム */
+.item-show__image {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.item-show__right {
+    width: 50%;
+}
+
+/* 見出し */
+.item-show h1 {
+    margin: 0 0 6px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+.item-show h2 {
+    margin: 18px 0 10px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+/* ブランド・本文 */
+.item-show p {
+    margin: 0;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.7;
+}
+
+/* エラーメッセージ（ｐ）を赤色にするための処理  */
+.item-show .form-error {
+    color: #ff4a4a;
+}
+
+/* ブランド名（h1直下のpだけ薄め） */
+.item-show h1+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 価格 */
+.item-price {
+    font-size: 30px;
+    font-weight: 450;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.item-price__symbol {
+    font-size: 0.7em;
+}
+
+.item-price__tax {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+/* 左：商品画像 */
+.item-show__image-box {
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #d9d9d9;
+}
+
+.item-show__image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.item-show__image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 700;
+}
+
+/* アイコン：いいね/コメント（テーブル固定で絶対ズレない版） */
+
+.item-icons-table {
+    border-collapse: collapse;
+    margin: 10px 0 12px 30px;
+}
+
+.item-icons-table td {
+    padding: 0;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item-icons-table td+td {
+    padding-left: 30px;
+}
+
+/* アイコンセル */
+.item-icons-table .icon-cell {
+    width: 36px;
+    height: 28px;
+}
+
+/* 数字セル */
+.item-icons-table .count-cell {
+    width: 36px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+/* ボタン・リンク共通 */
+.item-icons-table .icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* アイコン画像 */
+.item-icons-table .icon-btn img,
+.item-icons-table .icon-img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* form の余白対策 */
+.item-icons-table form {
+    margin: 0;
+}
+
+/*  互換：以前の flex 版が残っていても崩れないように残す */
+.item-icons {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin: 10px 0 12px;
+}
+
+.item-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 26px;
+}
+
+.item-icon form {
+    margin: 0;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon-btn img,
+.icon-img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.icon-img {
+    position: relative;
+    top: -2px;
+}
+
+/* 逆なら top: 1px; */
+
+.like-count,
+.icon-count {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+/* 購入ボタン */
+.purchase-btn {
+    width: 420px;
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    background: #ff4b4b;
+    border: 1px solid #ff4b4b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 購入不可ボタン */
+.purchase-btn.is-disabled {
+    background: #ccc;
+    border-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* 商品情報:箱/テーブル */
+.item-info-box {
+    padding: 18px 0;
+    margin-top: 8px;
+}
+
+.item-info-table {
+    border-collapse: collapse;
+}
+
+.item-info-label {
+    width: 110px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 900;
+    color: #111;
+    padding: 10px 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.item-info-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    vertical-align: middle;
+    padding: 10px 0 10px 30px;
+}
+
+.marketing-copy-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    align-items: center;
+    width: 420px;
+    max-width: 100%;
+}
+
+/* カテゴリのピル */
+.pill-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    align-items: center;
+    width: 320px;
+    max-width: 100%;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #d9d9d9;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* コメント= */
+.comments {
+    margin-top: 10px;
+    width: 420px;
+    max-width: 100%;
+}
+
+/* コメント1件の間隔 */
+.comment-item {
+    margin-bottom: 32px;
+}
+
+/* 上段：アイコン＋名前 */
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* 名前（縦落ち防止） */
+.comment-name {
+    font-size: 18px;
+    font-weight: 900;
+    color: #111;
+    margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* 本文（下段） */
+.comment-body {
+    width: 100%;
+    background: #e6e6e6;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+    word-break: break-word;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+/* 仮アイコン（共通枠） */
+.mypage-userIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mypage-userIcon__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* コメント投稿フォーム */
+.comment-form-table {
+    max-width: 420px;
+    margin-top: 18px;
+}
+
+.comment-form-table>tbody>tr>td {
+    padding: 0;
+}
+
+.comment-form-title {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #111;
+}
+
+.comment-form-textarea {
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    font-size: 12px;
+    resize: vertical;
+    outline: none;
+    background: #fff;
+}
+
+.comment-form-button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    background: #ff4b4b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* レスポンシブ：縦並び */
+@media (max-width: 980px) {
+    .item-show {
+        width: min(720px, 92vw);
+    }
+
+    .item-show__image {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 24px;
+    }
+
+    .item-show__right {
+        display: block;
+        width: 100%;
+    }
+
+    .purchase-btn {
+        width: 100%;
+    }
+
+    .comments,
+    .comment-form-table {
+        width: 100%;
+        max-width: 100%;
+    }
+}

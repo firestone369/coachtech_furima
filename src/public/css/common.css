@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+.site-header {
+    width: 100%;
+    border-collapse: collapse;
+    background: #000;
+}
+
+.site-header__inner {
+    height: 70px;
+    padding: 0 24px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* 右上のナビゲーション。3種類 */
+.site-header__left,
+.site-header__center,
+.site-header__right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-header__left {
+    width: 240px;
+}
+
+.site-header__right {
+    width: 320px;
+    text-align: right;
+}
+
+.site-header__center {
+    width: calc(100% - 240px - 320px);
+    text-align: center;
+}
+
+/* COACHTECHロゴ */
+.site-header__logo {
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+/* 検索 */
+.header-search__input {
+    width: 500px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-size: 20px;
+    background: #fff;
+}
+
+/* ナビゲーション */
+.header-nav {
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.header-nav__item {
+    padding-left: 16px;
+    white-space: nowrap;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.header-nav__link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header-nav__button {
+    padding: 6px 16px;
+    margin: 0 16px;
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* エラーメッセージ ：共通レイアウトで統一 */
+.form-error {
+    color: #ff4a4a;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+/* PC 1400–1540px：デザイン要件のレスポンシブ対応部分 */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .header-search__input {
+        width: 440px;
+    }
+}
